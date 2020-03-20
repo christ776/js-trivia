@@ -1,16 +1,9 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  max-width: 760px;
+  min-width: 700px;
+  margin: 0 auto;
+  background-color: whitesmoke;
 }
 
 .App-header {
@@ -28,11 +21,120 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btn-container .btn-new-game {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 373px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.btn-container .btn-new-game > span {
+  background-position: 0 7px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  outline: 0;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #646464;
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn.disabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+.btn-default {
+  color: #646464;
+  background-color: #1fbba6;
+  border-color: #d4d4d4;
+  -webkit-box-shadow: 0 3px 0 #b6b6b6;
+  box-shadow: 0 3px 0 #b6b6b6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1fbba6;
+  border-color: #1ba593;
+  -webkit-box-shadow: 0 3px 0 #137164;
+  box-shadow: 0 3px 0 #137164;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.open .dropdown-toggle.btn-primary {
+  position: relative;
+  top: 1px;
+  color: #fff;
+  background-color: #1eb29e;
+  border-color: #189483;
+  -webkit-box-shadow: 0 2px 0 #137164;
+  box-shadow: 0 2px 0 #137164;
+}
+.btn-primary:focus {
+  color: #fff;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  top: 3px;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0 #137164;
+  box-shadow: 0 0 0 #137164;
+}
+
+.btn-primary .badge {
+  color: #1fbba6;
+  background-color: #fff;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 8px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 8px;
+}
+
+.btn-answer {
+  display: block;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 0;
+  width: 100%;
+  font-family: "Brandon", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  height: 52px;
+  margin: 12px 0;
+  outline: none;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  outline: 0;
+  text-align: center;
+  border-radius: 10px;
 }

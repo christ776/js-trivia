@@ -1,0 +1,39 @@
+.answers-container {
+    position: relative;
+}
+
+.btn-container {
+    width: auto;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-top: 2px;
+    font: 18px "Mikado Black", Arial, sans-serif;
+    margin: 19px 0 14px 0;
+    /* height: 45px; */
+    display: block;
+  }
+
+.btn-play-now {
+    color: #fff !important;
+    display: block;
+    width: 65.5%;
+    /* margin: 35px auto auto; */
+    text-transform: uppercase;
+    background-color: #1fbba6 !important;
+    border-color: #1ba593;
+    -webkit-box-shadow: 0 3px 0 #137164;
+    box-shadow: 0 3px 0 #137164;
+    height: 45px;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+   .btn-play-now:hover,
+   .btn-play-now:focus  {
+    position: relative;
+    top: 1px;
+    color: #fff;
+    background-color: #1eb29e !important;
+    border-color: #189483;
+    -webkit-box-shadow: 0 2px 0 #137164;
+    box-shadow: 0 2px 0 #137164;
+}
