@@ -1,7 +1,9 @@
 module.exports = {
 	"env": {
 		"browser": true,
-		"es6": true
+		"es6": true,
+		"node": true,
+		"commonjs": true,
 	},
 	"extends": [
 		"eslint:recommended",
@@ -11,6 +13,7 @@ module.exports = {
 	],
 	"globals": {
 		"Atomics": "readonly",
+		"process": true,
 		"SharedArrayBuffer": "readonly"
 	},
 	"parser": "@typescript-eslint/parser",
@@ -26,10 +29,7 @@ module.exports = {
 		"@typescript-eslint"
 	],
 	"rules": {
-		"indent": [
-			"error",
-			"tab"
-		],
+		"indent": ["error", 2],
 		"linebreak-style": [
 			"error",
 			"unix"
@@ -41,6 +41,9 @@ module.exports = {
 		"semi": [
 			"error",
 			"always"
-		]
+		],
+		quotes: "off",
+		'@typescript-eslint/no-var-requires': 0,
+		'@typescript-eslint/camelcase': 0
 	}
 };
