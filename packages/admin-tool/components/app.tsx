@@ -1,30 +1,30 @@
 import React, { useRef } from "react";
 
-require('react-dom');
-window.React2 = require('react');
-console.log(window.React1 === window.React2);
+// require('react-dom');
+// window.React2 = require('react');
+// console.log(window.React1 === window.React2);
 
-// type Props = {
+type Props = {
 
-// }
+}
 
-const App = () => {
+const App: React.FC<Props> = () => {
 
   const inputRef = useRef(null);
-  const parseCardsSheetFromURL = () => {
+  const parseCardsSheetFromURL = (): void => {
     console.log(inputRef.current);
   };
  
   return (
     <div className="div">
-      {/* <h3>
+      <h3>
         Importer Tool
       </h3>
       <form onSubmit={parseCardsSheetFromURL}>
         <label htmlFor="sheetURL">Sheet URL</label>
         <input type="text" id="sheetURL" ref={inputRef}/>
         <input type="submit" value="Submit" />
-      </form> */}
+      </form>
     </div>
   );
 };
